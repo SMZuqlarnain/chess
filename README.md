@@ -86,20 +86,18 @@ python main.py
 ```
 ### 🎯 Controls
 
-- Click a piece to select it.
-
-- Click the destination square to move it.
-
-- The game alternates turns automatically.
-
 - When Black = False, the AI controls Black.
+```python
+WhiteHuman = True
+BlackHuman = False
+
+```
 - 🖱 Click a piece to select it.
 - 🖱 Click a highlighted square to move it.
 - 🎯 Blue squares = legal moves.
 - 🔴 Red square = king in check.
 - ⏪ Press Z → Undo last move.
 - 🔁 Press Y → Redo move.
-- 📜 Move History window opens automatically — shows all moves.
 - 👑 Pawn Promotion Popup appears when a pawn reaches last rank (choose R/N/B/Q).
 - ♟ En passant, castling, stalemate, and checkmate are fully implemented.
 - ♻ Threefold repetition = automatic draw.
