@@ -1,66 +1,114 @@
-Chess Engine with Pygame
-A simple chess engine built using Python with Pygame 2.6.1, featuring a graphical interface, AI opponent with negamax and alpha-beta pruning, and various chess rules.
-Features
+# ♟️ Chess Engine with Pygame
 
-Gameplay: Play as White or Black (toggleable via Black variable).
-AI: AI opponent using negamax with alpha-beta pruning for move selection.
-Rules Implemented:
-Checkmate and stalemate detection.
-En passant.
-Castling.
-Pawn promotion (always to Queen).
+A simple yet powerful **Chess Engine** built in **Python** using **Pygame 2.6.1**.  
+It features a clean graphical interface, an AI opponent powered by **Negamax with Alpha-Beta Pruning**, and a full implementation of core chess rules.
+
+---
+
+## 📚 Table of Contents
+1. [Features](#-features)
+2. [Requirements](#-requirements)
+3. [Installation](#-installation)
+4. [Usage](#-usage)
+5. [File Structure](#-file-structure)
+6. [Development](#-development)
+7. [Contributing](#-contributing)
 
 
-Graphics: Uses custom chess piece images stored in the images folder.
-User Control: Switch between user mode (Black = True) and AI mode (Black = False) by editing the code.
+---
 
-Requirements
+## 🚀 Features
 
-Python 3.x
-Pygame 2.6.1 (pip install pygame==2.6.1)
-Images for chess pieces (provided in the images folder: bb.png, bk.png, etc.)
+### 🎮 Gameplay
+- Play as **White** or **Black** (toggle via `Black` variable).
+- Smooth GUI built with **Pygame**.
 
-Installation
+### 🧠 Artificial Intelligence
+- AI opponent uses **Negamax algorithm** with **Alpha-Beta pruning** for efficient move selection.
 
-Clone the repository:git clone (https://github.com/SMZuqlarnain/chess.git)
+### ⚖️ Rules Implemented
+- ✅ Checkmate and stalemate detection  
+- ✅ En passant  
+- ✅ Castling  
+- ✅ Pawn promotion (to **Queen** by default)
+
+### 🖼️ Graphics
+- Uses **custom chess piece images** stored in the `/images` folder.
+
+### 👤 User Control
+- Switch between **user** and **AI** control by editing the `Black` variable in `main.py`:
+  ```python
+  # Change control
+  Black = True   # User controls Black
+  Black = False  # AI controls Black
+  ```
+### 🧩 Requirements
+
+- Python 3.x
+
+- Pygame 2.6.1
+```python
+
+pip install pygame==2.6.1
+
+```
+
+Chess piece images (included in the /images folder):
+```python
+bb.png, bk.png, bp.png, br.png, wb.png, wk.png, wp.png, wr.png, etc. 
+```
+### ⚙️ Installation
+
+- Clone the repository
+```python
+
+git clone https://github.com/SMZuqlarnain/chess.git
 cd chess-engine
 
+```
 
-Install the required package:pip install pygame==2.6.1
+- Install dependencies
+```python
 
+pip install pygame==2.6.1
 
-Ensure the images folder with chess piece PNGs is in the project directory.
+```
+- Ensure image assets are present
 
-Usage
+- Make sure the /images folder (with all chess piece PNGs) is inside the project directory.
 
-Run the game:python main.py
+### 🕹️ Usage
 
+- Run the game:
+```python
 
-Controls:
-Click a piece to select it.
-Click the destination square to move.
-The game alternates turns; AI moves automatically if Black = False and it's Black's turn.
+python main.py
+```
+### 🎯 Controls
 
+- Click a piece to select it.
 
-Modify Black in main.py to switch between user and AI control:
-Black = True: User controls Black pieces.
-Black = False: AI controls Black pieces.
+- Click the destination square to move it.
 
+- The game alternates turns automatically.
 
+- When Black = False, the AI controls Black.
 
-File Structure
+### 📁 File Structure
+- File / Folder	Description
+- main.py	Main game loop and Pygame interface
+- chessengine.py	Core chess logic and move handling
+- movefinder.py	Move generation and AI evaluation
+- images/	Folder containing chess piece sprites (e.g., wp.png, br.png)
+###🧑‍💻 Development
 
-chessengine.py: Core game logic and move handling.
-movefinder.py: Move generation and AI evaluation.
-main.py: Main game loop and Pygame interface.
-images/: Folder containing chess piece images (e.g., wp.png, br.png).
+- - Developed on Windows using VS Code
 
-Development
+- Compatible with Pygame 2.6.1
 
-Developed on Windows using VS Code.
-Compatible with Pygame 2.6.1 in a browser environment via Pyodide (no local file I/O).
+- Tested in browser environments via Pyodide (no local file I/O)
 
-Contributing
-Feel free to fork this repository, make improvements (e.g., better AI depth, additional rules), and submit pull requests!
-License
-MIT License (or specify your preferred license if different).
+### 🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repository, improve the AI, add new features, or optimize performance.
