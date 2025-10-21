@@ -86,12 +86,7 @@ python main.py
 ```
 ### 🎯 Controls
 
-- When Black = False, the AI controls Black.
-```python
-WhiteHuman = True
-BlackHuman = False
-
-```
+- ♟️ When Black = False, the AI controls Black.
 - 🖱 Click a piece to select it.
 - 🖱 Click a highlighted square to move it.
 - 🎯 Blue squares = legal moves.
