@@ -12,7 +12,7 @@ from tkinter import simpledialog
 
 # Player control flags (change these variables)
 White = True    # True => human controls white; False => AI controls white
-Black = False   # True => human controls black; False => AI controls black
+Black = True  # True => human controls black; False => AI controls black
 
 AI_DEPTH = 1  # default depth (plies)
 
